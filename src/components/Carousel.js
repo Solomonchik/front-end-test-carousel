@@ -3,20 +3,20 @@ import ItemsCarousel from 'react-items-carousel';
 
 
 const images = [
-    {url: './img/1.jpg', alt: '1'},
-    {url: './img/2.jpg', alt: '2'},
-    {url: './img/3.jpg', alt: '3'},
-    {url: './img/4.jpg', alt: '4'},
-    {url: './img/5.jpg', alt: '5'},
-    {url: './img/6.jpg', alt: '6'},
-    {url: './img/7.jpg', alt: '7'},
-    {url: './img/8.jpg', alt: '8'},
-    {url: './img/9.jpg', alt: '9'},
+    {url: require('../img/1.jpg'), alt: '1'},
+    {url: require('../img/2.jpg'), alt: '2'},
+    {url: require('../img/3.jpg'), alt: '3'},
+    {url: require('../img/4.jpg'), alt: '4'},
+    {url: require('../img/5.jpg'), alt: '5'},
+    {url: require('../img/6.jpg'), alt: '6'},
+    {url: require('../img/7.jpg'), alt: '7'},
+    {url: require('../img/8.jpg'), alt: '8'},
+    {url: require('../img/9.jpg'), alt: '9'},
 ];
 
 export default class Test extends React.Component {
-
-    createChildren = () => images.map((image) => <img src={require(`${image.url}`)} key={image.id} style={{height: 400, background: '#333', width: '100%'}} alt="asd"/>);
+    // eslint-disable-next-line
+    createChildren = () => images.map((image) => <img src={image.url} key={image.id} style={{height: 300, width: '100%'}} alt="asd"/>);
 
     componentWillMount() {
         this.setState({
