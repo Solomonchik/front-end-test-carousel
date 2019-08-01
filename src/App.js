@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Test from './Carousel'
+import Test from './components/Carousel'
 
 class App extends Component {
     render() {
