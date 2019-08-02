@@ -24,3 +24,29 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .labelContainer {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 0;
+    .labelUl {
+      max-width: 740px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

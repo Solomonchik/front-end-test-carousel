@@ -16,7 +16,7 @@ const images = [
 
 export default class Test extends React.Component {
     // eslint-disable-next-line
-    createChildren = () => images.map((image) => <img src={image.url} key={image.id} style={{height: 300, width: '100%'}} alt="asd"/>);
+    createChildren = () => images.map((image) => <img src={image.url} key={image.id} style={{height: "100%", maxHeight: 300, width: '100%'}} alt="asd"/>);
 
     componentWillMount() {
         this.setState({
@@ -39,6 +39,7 @@ export default class Test extends React.Component {
             activeItemIndex,
             children,
         } = this.state;
+
 
         return (
             <ItemsCarousel
